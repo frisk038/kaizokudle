@@ -4108,7 +4108,7 @@
     "status": "Alive",
     "description": "Member of the Yonta Maria Grand Fleet",
     "gender": "Female",
-    "affiliation1": "Civil"
+    "affiliation1": "Pirate"
   },
   {
     "name": "Comil",
@@ -6110,7 +6110,7 @@
     "status": "Deceased",
     "description": "Revolutionist commander who led a militia group on an unknown island. His resemblance to Caribou caused misunderstandings",
     "gender": "Male",
-    "affiliation1": "Civil"
+    "affiliation1": "Revolutionary Army"
   },
   {
     "name": "Gaimon",
@@ -13863,7 +13863,7 @@
     "status": "Alive",
     "description": "Former adventurer who is the admiral of the Yonta Mari Grand Fleet, captain of the 7th ship of the Straw Hat Grand Fleet",
     "gender": "Male",
-    "affiliation1": "Gouvernement"
+    "affiliation1": "Pirate"
   },
   {
     "name": "Ossamondo",
