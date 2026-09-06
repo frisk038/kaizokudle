@@ -102,12 +102,22 @@ function makeGuess(char) {
         return gNum > tNum ? `${formatted} ↓` : `${formatted} ↑`;
     };
 
+    const formatHaki = (hakiArray) => {
+        if (!hakiArray || hakiArray.length === 0) return "None";
+        const hakiEmojis = {
+            "Conquerors": "👑",
+            "Armament": "⚔️",
+            "Observation": "👁️"
+        };
+        return hakiArray.map(h => `${hakiEmojis[h] || ''} ${h}`.trim()).join(", ");
+    };
+
     const cols = [
         { guess: char.name, target: targetCharacter.name },
         { guess: formatGender(char.gender), target: formatGender(targetCharacter.gender) },
         { guess: char.affiliation || "None", target: targetCharacter.affiliation || "None" },
         { guess: formatDF(char.devil_fruit), target: formatDF(targetCharacter.devil_fruit) },
-        { guess: formatArray(char.haki) || "None", target: formatArray(targetCharacter.haki) || "None" },
+        { guess: formatHaki(char.haki), target: formatHaki(targetCharacter.haki) },
         { guess: formatBounty(char.bounty), target: formatBounty(targetCharacter.bounty) },
         { html: compareNumeric(char.height, targetCharacter.height, formatHeight), isMatch: char.height === targetCharacter.height },
         { html: compareNumeric(char.first_appearance_arc, targetCharacter.first_appearance_arc, x => x), isMatch: char.first_appearance_arc === targetCharacter.first_appearance_arc }
