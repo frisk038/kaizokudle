@@ -65,29 +65,70 @@ function makeGuess(char) {
     
     const tr = document.createElement('tr');
     
-    // Name, Gender, Affiliation, Devil Fruit, Haki Type, Bounty, Height, First Appeared Arc
+    // Formatting Helpers
+    const formatBounty = (b) => {
+        if (!b) return "None";
+        if (typeof b === "number") return b.toLocaleString();
+        return b;
+    };
+
+    const formatHeight = (h) => {
+        if (!h) return "Unknown";
+        if (typeof h === "number") {
+            const m = Math.floor(h / 100);
+            const cm = (h % 100).toString().padStart(2, '0');
+            return `${m}m${cm}`;
+        }
+        return h;
+    };
+
+    const formatDF = (df) => df ? df : "None";
+    const formatGender = (g) => g ? (g.toLowerCase().startsWith('m') ? 'M' : (g.toLowerCase().startsWith('f') ? 'F' : g)) : "Unknown";
+
+    const compareNumeric = (gVal, tVal, formatFn) => {
+        const formatted = formatFn ? formatFn(gVal) : (gVal || "Unknown");
+        if (!gVal || !tVal) return formatted;
+        
+        let gNum = gVal;
+        let tNum = tVal;
+        
+        // Parse Chapter numbers
+        if (typeof gVal === 'string' && gVal.includes('Chapter')) {
+            gNum = parseInt(gVal.replace(/\D/g, '')) || 0;
+            tNum = parseInt(tVal.replace(/\D/g, '')) || 0;
+        }
+
+        if (gNum === tNum) return formatted;
+        return gNum > tNum ? `${formatted} ↓` : `${formatted} ↑`;
+    };
+
     const cols = [
         { guess: char.name, target: targetCharacter.name },
-        { guess: char.gender, target: targetCharacter.gender },
-        { guess: char.affiliation, target: targetCharacter.affiliation },
-        { guess: char.devil_fruit, target: targetCharacter.devil_fruit },
-        { guess: formatArray(char.haki), target: formatArray(targetCharacter.haki) },
-        { guess: char.bounty, target: targetCharacter.bounty },
-        { guess: char.height, target: targetCharacter.height },
-        { guess: char.first_appearance_arc, target: targetCharacter.first_appearance_arc }
+        { guess: formatGender(char.gender), target: formatGender(targetCharacter.gender) },
+        { guess: char.affiliation || "None", target: targetCharacter.affiliation || "None" },
+        { guess: formatDF(char.devil_fruit), target: formatDF(targetCharacter.devil_fruit) },
+        { guess: formatArray(char.haki) || "None", target: formatArray(targetCharacter.haki) || "None" },
+        { guess: formatBounty(char.bounty), target: formatBounty(targetCharacter.bounty) },
+        { html: compareNumeric(char.height, targetCharacter.height, formatHeight), isMatch: char.height === targetCharacter.height },
+        { html: compareNumeric(char.first_appearance_arc, targetCharacter.first_appearance_arc, x => x), isMatch: char.first_appearance_arc === targetCharacter.first_appearance_arc }
     ];
 
     cols.forEach(colData => {
         const td = document.createElement('td');
-        const gVal = colData.guess || "-";
-        const tVal = colData.target || "-";
         
-        td.textContent = gVal;
-        
-        if (gVal === tVal) {
-            td.className = 'correct';
+        if (colData.html !== undefined) {
+            td.textContent = colData.html;
+            td.className = colData.isMatch ? 'correct' : 'incorrect';
         } else {
-            td.className = 'incorrect';
+            const gVal = colData.guess;
+            const tVal = colData.target;
+            
+            td.textContent = gVal;
+            if (gVal === tVal) {
+                td.className = 'correct';
+            } else {
+                td.className = 'incorrect';
+            }
         }
         
         tr.appendChild(td);
