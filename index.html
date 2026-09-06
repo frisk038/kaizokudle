@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kaizokudle</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <h1>Kaizokudle</h1>
+    
+    <div style="position: relative; width: 300px; margin-bottom: 20px;">
+        <input type="text" id="character-input" placeholder="Type a character name..." autocomplete="off">
+        <div id="autocomplete-list" class="autocomplete-items"></div>
+    </div>
+
+    <table id="guesses-table">
+        <thead>
+            <tr id="table-header" style="display: none;">
+                <th>Name</th>
+                <th>Gender</th>
+                <th>Affiliation</th>
+                <th>Devil Fruit</th>
+                <th>Haki Type</th>
+                <th>Bounty</th>
+                <th>Height</th>
+                <th>First Appeared Arc</th>
+            </tr>
+        </thead>
+        <tbody id="guesses-body">
+            <!-- Guesses go here -->
+        </tbody>
+    </table>
+
+    <script src="index.js"></script>
+</body>
+</html>
