@@ -411,6 +411,14 @@ td.incorrect {
 /* ── Utilities ── */
 .hidden { display: none !important; }
 
+.site-footer {
+    text-align: center;
+    padding: 12px;
+    font-size: 0.65rem;
+    color: var(--text-dim);
+    letter-spacing: 0.1em;
+}
+
 /* ── Scrollbar styling (webkit) ── */
 ::-webkit-scrollbar { width: 4px; height: 4px; }
 ::-webkit-scrollbar-track { background: transparent; }
