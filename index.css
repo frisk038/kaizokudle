@@ -272,15 +272,6 @@ body::before {
 
 .guesses-meta.hidden { display: none; }
 
-.guesses-label {
-    font-size: 0.72rem;
-    font-weight: 600;
-    color: var(--text-muted);
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    white-space: nowrap;
-}
-
 .guesses-pips {
     display: flex;
     gap: 5px;
@@ -300,14 +291,6 @@ body::before {
 .pip.used   { background: var(--incorrect); border-color: var(--incorrect); }
 .pip.win    { background: var(--correct);   border-color: var(--correct); }
 
-.guesses-count {
-    font-size: 0.8rem;
-    font-weight: 600;
-    color: var(--text-muted);
-    white-space: nowrap;
-    min-width: 42px;
-    text-align: right;
-}
 
 /* ── Table wrapper: NO horizontal scroll ── */
 .table-wrapper {
