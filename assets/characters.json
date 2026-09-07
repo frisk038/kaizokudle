@@ -79,7 +79,7 @@
     "status": "Alive",
     "description": "Giant kid from Elbaph that attends the Walrus School",
     "gender": "Male",
-    "affiliation1": "Pirate"
+    "affiliation1": "Civil"
   },
   {
     "name": "Ageha Woman",
@@ -304,7 +304,7 @@
     "status": "Alive",
     "description": "Giant kid from Elbaph that attends the Walrus School",
     "gender": "Male",
-    "affiliation1": "Pirate"
+    "affiliation1": "Civil"
   },
   {
     "name": "Alvida",
@@ -598,7 +598,7 @@
     "status": "Deceased",
     "description": "Former bandit, a samurai from Wano serving as one of the Nine Red Scabbards",
     "gender": "Male",
-    "affiliation1": "Pirate"
+    "affiliation1": "Civil"
   },
   {
     "name": "Asla",
@@ -698,7 +698,7 @@
     "status": "Alive",
     "description": "Giant kid from Elbaph that attends the Walrus School",
     "gender": "Male",
-    "affiliation1": "Pirate"
+    "affiliation1": "Civil"
   },
   {
     "name": "Ayesé Mar",
@@ -1263,7 +1263,7 @@
     "status": "Alive",
     "description": "Giant kid from Elbaph that attends the Walrus School. One of the 10 kids that were kidnapped by the Knights of God",
     "gender": "Male",
-    "affiliation1": "Pirate"
+    "affiliation1": "Civil"
   },
   {
     "name": "Bentham (Bon Clay) [Mr. 2]",
@@ -1307,7 +1307,7 @@
     "status": "Alive",
     "description": "Dwarf from Tontatta Kingdom who serves as the leader of the Pink Bee Squad and a member of the Tontatta Pirates",
     "gender": "Female",
-    "affiliation1": "Pirate"
+    "affiliation1": "Civil"
   },
   {
     "name": "Biblo",
@@ -1459,7 +1459,7 @@
     "status": "Alive",
     "description": "Member of the Giant Warrior Pirates that protected the Great Eirik alongside Sig during the Egghead Incident",
     "gender": "Male",
-    "affiliation1": "Pirate"
+    "affiliation1": "Civil"
   },
   {
     "name": "Black Maria",
@@ -1765,7 +1765,7 @@
     "status": "Alive",
     "description": "G-5 member - Unit 01",
     "gender": "Male",
-    "affiliation1": "Gouvernement"
+    "affiliation1": "Civil"
   },
   {
     "name": "Bomba",
@@ -2209,7 +2209,7 @@
     "status": "Alive",
     "description": "Scientist and one of the co-founders of NEO MADS. Former member of MADS and creator of the chemical SAD",
     "gender": "Male",
-    "affiliation1": "Civil"
+    "affiliation1": "Pirate"
   },
   {
     "name": "Caimanlady",
@@ -2297,7 +2297,7 @@
     "status": "Unknown",
     "description": "Captain of the Candy Pirates. He and his crew were defeated by CP9 after Enies Lobby",
     "gender": "Male",
-    "affiliation1": "Gouvernement"
+    "affiliation1": "Pirate"
   },
   {
     "name": "Candelle",
@@ -2441,7 +2441,7 @@
     "status": "Alive",
     "description": "Most dangerous female pirate ever to be imprisoned in Impel Down. Currently working for Teach as captain of the 6th ship",
     "gender": "Female",
-    "affiliation1": "Gouvernement"
+    "affiliation1": "Pirate"
   },
   {
     "name": "Caucasusman",
@@ -2955,7 +2955,7 @@
     "status": "Alive",
     "description": "44th son and 81st child of the Charlotte Family. Human-fish-man hybrid",
     "gender": "Male",
-    "affiliation1": "Civil"
+    "affiliation1": "Pirate"
   },
   {
     "name": "Charlotte Dolce",
@@ -3456,7 +3456,7 @@
     "status": "Alive",
     "description": "38th daughter and 82nd child of the Charlotte Family. She is a dosundada - Human-dwarf hybrid",
     "gender": "Female",
-    "affiliation1": "Civil"
+    "affiliation1": "Pirate"
   },
   {
     "name": "Charlotte Nougat",
@@ -3695,7 +3695,7 @@
     "status": "Alive",
     "description": "37th daughter and 79th child of the Charlotte Family",
     "gender": "Female",
-    "affiliation1": "Civil"
+    "affiliation1": "Pirate"
   },
   {
     "name": "Charlotte Wiro",
@@ -3707,7 +3707,7 @@
     "status": "Alive",
     "description": "43th son and 80th child of the Charlotte Family. Snakeneck-human hybrid",
     "gender": "Male",
-    "affiliation1": "Civil"
+    "affiliation1": "Pirate"
   },
   {
     "name": "Charlotte Yuen",
@@ -3815,7 +3815,7 @@
     "status": "Alive",
     "description": "Dwarf from Tontatta Kingdom and member of the Tontatta Pirates",
     "gender": "Female",
-    "affiliation1": "Pirate"
+    "affiliation1": "Civil"
   },
   {
     "name": "Chihaya",
@@ -4325,7 +4325,7 @@
     "status": "Alive",
     "description": "Former Roger Pirates member (doctor) and now working as the caretaker of Laboon and the overseer of Twin Cape Lighthouse",
     "gender": "Male",
-    "affiliation1": "Pirate"
+    "affiliation1": "Civil"
   },
   {
     "name": "Curiel",
@@ -4352,7 +4352,7 @@
     "status": "Alive",
     "description": "Friend of Garp and foster mother of Ace, Luffy and Sabo. Mountain bandit boss of the Dadan Family and wanted criminal",
     "gender": "Female",
-    "affiliation1": "Pirate"
+    "affiliation1": "Civil"
   },
   {
     "name": "Cyrano",
@@ -4421,7 +4421,7 @@
     "status": "Alive",
     "description": "Giant kid from Elbaph that attends the Walrus School",
     "gender": "Female",
-    "affiliation1": "Pirate"
+    "affiliation1": "Civil"
   },
   {
     "name": "Dago",
@@ -4802,7 +4802,7 @@
     "status": "Deceased",
     "description": "Marine officer who defected to become a pirate. 13 years ago, he was the captain of the Barrels Pirates while operating in the North Blue until he was killed by Doflamingo. Father of X Drake",
     "gender": "Male",
-    "affiliation1": "Gouvernement"
+    "affiliation1": "Pirate"
   },
   {
     "name": "Dirt Boss",
@@ -5031,7 +5031,7 @@
     "status": "Alive",
     "description": "World Noble, former Warlord, and captain of the Donquixote Pirates. Son of Homing and older brother of Rosinante",
     "gender": "Male",
-    "affiliation1": "Gouvernement"
+    "affiliation1": "Pirate"
   },
   {
     "name": "Donquixote Homing",
@@ -5388,7 +5388,7 @@
     "status": "Alive",
     "description": "Dwarf from Tontatta Kingdom and member of the Tontatta Pirates",
     "gender": "Female",
-    "affiliation1": "Pirate"
+    "affiliation1": "Civil"
   },
   {
     "name": "Eiri",
@@ -5457,7 +5457,7 @@
     "status": "Alive",
     "description": "Giant kid from Elbaph that attends the Walrus School",
     "gender": "Female",
-    "affiliation1": "Pirate"
+    "affiliation1": "Civil"
   },
   {
     "name": "Emma",
@@ -5542,7 +5542,7 @@
     "status": "Alive",
     "description": "Nurse in service to the royal household of the Germa Kingdom",
     "gender": "Female",
-    "affiliation1": "Civil"
+    "affiliation1": "Pirate"
   },
   {
     "name": "Erik",
@@ -5779,7 +5779,7 @@
     "status": "Deceased",
     "description": "Founder and original captain of the Sun Pirates. He was a slave and died from blood loss after being ambushed and shot by Marines",
     "gender": "Male",
-    "affiliation1": "Gouvernement"
+    "affiliation1": "Pirate"
   },
   {
     "name": "Flapper",
@@ -6962,7 +6962,7 @@
     "status": "Alive",
     "description": "Giant kid from Elbaph that attends the Walrus School",
     "gender": "Male",
-    "affiliation1": "Pirate"
+    "affiliation1": "Civil"
   },
   {
     "name": "Gyaro",
@@ -8213,7 +8213,7 @@
     "status": "Alive",
     "description": "Captain of the Arabasta royal guard. He aided Vivi in infiltrating Baroque Works as a Frontier Agent and took on the codename Mr.8",
     "gender": "Male",
-    "affiliation1": "Pirate"
+    "affiliation1": "Civil"
   },
   {
     "name": "Ikaros Much",
@@ -8541,7 +8541,7 @@
     "status": "Deceased",
     "description": "Former 16th division commander of the Whitebeard Pirates and prior to this, a retainer of Oden. Elder brother of Kikunojo. He died fighting Maha from CP0 in Wano",
     "gender": "Male",
-    "affiliation1": "Gouvernement"
+    "affiliation1": "Pirate"
   },
   {
     "name": "Jabari",
@@ -8987,7 +8987,7 @@
     "status": "Alive",
     "description": "Giant kid from Elbaph that attends the Walrus School. One of the 10 kids that were kidnapped by the Knights of God",
     "gender": "Female",
-    "affiliation1": "Pirate"
+    "affiliation1": "Civil"
   },
   {
     "name": "John",
@@ -9206,7 +9206,7 @@
     "status": "Alive",
     "description": "Dwarf from Tontatta Kingdom and member of the Tontatta Pirates, being the leader of the Yellow Kabu Squad",
     "gender": "Male",
-    "affiliation1": "Pirate"
+    "affiliation1": "Civil"
   },
   {
     "name": "Kadar",
@@ -9499,7 +9499,7 @@
     "status": "Alive",
     "description": "Giant kid from Elbaph that attends the Walrus School. One of the 10 kids that were kidnapped by the Knights of God",
     "gender": "Female",
-    "affiliation1": "Pirate"
+    "affiliation1": "Civil"
   },
   {
     "name": "Karma",
@@ -9584,7 +9584,7 @@
     "status": "Alive",
     "description": "One of the two giants who guarded the front gate of Enies Lobby alongside Oimo. Now member of the Giant Warrior Pirates",
     "gender": "Male",
-    "affiliation1": "Gouvernement"
+    "affiliation1": "Pirate"
   },
   {
     "name": "Katsuzo",
@@ -9743,7 +9743,7 @@
     "status": "Alive",
     "description": "Principal of the Walrus School and former member of the Giant Warrior Pirates",
     "gender": "Male",
-    "affiliation1": "Pirate"
+    "affiliation1": "Civil"
   },
   {
     "name": "Kibagaeru",
@@ -9971,7 +9971,7 @@
     "status": "Alive",
     "description": "Former Impel Down Level 5 prisoner and member of the Buggy Pirates",
     "gender": "Male",
-    "affiliation1": "Gouvernement"
+    "affiliation1": "Pirate"
   },
   {
     "name": "Kirinkodanuki",
@@ -10706,7 +10706,7 @@
     "status": "Alive",
     "description": "Captain of the Tenth Ship of the Blackbeard Pirates and former Marine Admiral",
     "gender": "Male",
-    "affiliation1": "Gouvernement"
+    "affiliation1": "Pirate"
   },
   {
     "name": "Kyo [Silver Axe]",
@@ -10897,7 +10897,7 @@
     "status": "Alive",
     "description": "Dwarf from Tontatta Kingdom and the leader of the Tontatta Pirates. Captain of the 5th ship of the Straw Hat Grand Fleet",
     "gender": "Male",
-    "affiliation1": "Pirate"
+    "affiliation1": "Civil"
   },
   {
     "name": "Leonero",
@@ -11209,7 +11209,7 @@
     "status": "Alive",
     "description": "Giant kid from Elbaph that attends the Walrus School. One of the 10 kids that were kidnapped by the Knights of God",
     "gender": "Male",
-    "affiliation1": "Pirate"
+    "affiliation1": "Civil"
   },
   {
     "name": "Magellan",
@@ -13208,7 +13208,7 @@
     "status": "Alive",
     "description": "Princess of Arabasta Kingdom. Daughter of Cobra and Titi. She previously worked undercover on Baroque Works as Miss Wednesday alongside Igaram in order to save her kingdom",
     "gender": "Female",
-    "affiliation1": "Pirate"
+    "affiliation1": "Civil"
   },
   {
     "name": "Neggy",
@@ -13617,7 +13617,7 @@
     "status": "Deceased",
     "description": "Was the shipwright of the Black Cat Pirates and the crew member who got hypnotized by Jango to pretend he was Kuro and was killed by the Marines 3 years prior to Kuro enacting his plan",
     "gender": "Male",
-    "affiliation1": "Gouvernement"
+    "affiliation1": "Pirate"
   },
   {
     "name": "Nure-Onna",
@@ -13729,7 +13729,7 @@
     "status": "Alive",
     "description": "One of the two giants who guarded the front gate of Enies Lobby alongside Kashii. Now member of the Giant Warrior Pirates",
     "gender": "Male",
-    "affiliation1": "Gouvernement"
+    "affiliation1": "Pirate"
   },
   {
     "name": "Oiwa",
@@ -13773,7 +13773,7 @@
     "status": "Alive",
     "description": "Giant kid from Elbaph that attends the Walrus School. Oimo's grandson and one of the 10 kids that were kidnapped by the Knights of God",
     "gender": "Male",
-    "affiliation1": "Pirate"
+    "affiliation1": "Civil"
   },
   {
     "name": "Oli",
@@ -14621,7 +14621,7 @@
     "status": "Alive",
     "description": "Big Mom's 25th ex-Husband, father of Chiffon and Lola. Grandfather of Pez",
     "gender": "Male",
-    "affiliation1": "Pirate"
+    "affiliation1": "Civil"
   },
   {
     "name": "Prince Grus",
@@ -15372,7 +15372,7 @@
     "status": "Alive",
     "description": "Giant kid from Elbaph that attends the Walrus School and is the class president. One of the 10 kids that were kidnapped by the Knights of God",
     "gender": "Female",
-    "affiliation1": "Pirate"
+    "affiliation1": "Civil"
   },
   {
     "name": "Roronoa Arashi",
@@ -16475,7 +16475,7 @@
     "status": "Alive",
     "description": "Captain and helmsman of the Golden Lion Pirates. Former member of the Rocks Pirates and the first known prisoner to have ever escaped from Impel Down",
     "gender": "Male",
-    "affiliation1": "Gouvernement"
+    "affiliation1": "Pirate"
   },
   {
     "name": "Shikon Kettai",
@@ -16712,7 +16712,7 @@
     "status": "Alive",
     "description": "Captain of the 2nd ship of Blackbeard Pirates and former Head Jailer of Impel Down who had himself been imprisoned on Level 6 death row for his excessive, murderous violence against prisoners",
     "gender": "Male",
-    "affiliation1": "Gouvernement"
+    "affiliation1": "Pirate"
   },
   {
     "name": "Shishilian",
@@ -16873,7 +16873,7 @@
     "status": "Alive",
     "description": "Giant kid from Elbaph that attends the Walrus School. One of the 10 kids that were kidnapped by the Knights of God",
     "gender": "Male",
-    "affiliation1": "Pirate"
+    "affiliation1": "Civil"
   },
   {
     "name": "Skull",
@@ -17242,7 +17242,7 @@
     "status": "Alive",
     "description": "Fictional character member of Germa 66 portrayed in the comic strip Sora, Warrior of the Sea",
     "gender": "Male",
-    "affiliation1": "Civil"
+    "affiliation1": "Pirate"
   },
   {
     "name": "Sterry",
@@ -18835,7 +18835,7 @@
     "status": "Deceased",
     "description": "Was one of the four elite officers and the first to occupy the Heart seat of the Donquixote Pirates. He was a Marine Vice Admiral and the head of G-5 who was working undercover for Doflamingo",
     "gender": "Male",
-    "affiliation1": "Gouvernement"
+    "affiliation1": "Pirate"
   },
   {
     "name": "Very Good",
@@ -18898,7 +18898,7 @@
     "status": "Alive",
     "description": "Eldest son and second child of the Vinsmoke Family. Prince of the Germa Kingdom and a commander in its military arm, Germa 66",
     "gender": "Male",
-    "affiliation1": "Civil"
+    "affiliation1": "Pirate"
   },
   {
     "name": "Vinsmoke Judge",
@@ -18913,7 +18913,7 @@
     "status": "Alive",
     "description": "King of the Germa Kingdom, the supreme commander of the Germa 66, and the patriarch of the Vinsmoke Family, being Sanji's biological father",
     "gender": "Male",
-    "affiliation1": "Civil"
+    "affiliation1": "Pirate"
   },
   {
     "name": "Vinsmoke Niji",
@@ -18928,7 +18928,7 @@
     "status": "Alive",
     "description": "Second son and third child of the Vinsmoke Family. Prince of the Germa Kingdom and a commander in its military arm, Germa 66",
     "gender": "Male",
-    "affiliation1": "Civil"
+    "affiliation1": "Pirate"
   },
   {
     "name": "Vinsmoke Reiju",
@@ -18943,7 +18943,7 @@
     "status": "Alive",
     "description": "Eldest child and only daughter of the Vinsmoke Family. Princess of the Germa Kingdom and a commander in its military arm, Germa 66",
     "gender": "Female",
-    "affiliation1": "Civil"
+    "affiliation1": "Pirate"
   },
   {
     "name": "Vinsmoke Sora",
@@ -18969,7 +18969,7 @@
     "status": "Alive",
     "description": "Fourth son and youngest child of the Vinsmoke Family. Prince of the Germa Kingdom and a commander in its military arm, Germa 66",
     "gender": "Male",
-    "affiliation1": "Civil"
+    "affiliation1": "Pirate"
   },
   {
     "name": "Viola",
@@ -19254,7 +19254,7 @@
     "status": "Alive",
     "description": "One of the Tobiroppo. Over a decade ago, he served as an agent of CP9 before his failure to guard the Gomu Gomu no Mi led to his dismissal from service and imprisonment. Former Captain of the Who's-Who Pirates",
     "gender": "Male",
-    "affiliation1": "Gouvernement"
+    "affiliation1": "Pirate"
   },
   {
     "name": "Wicca",
@@ -19266,7 +19266,7 @@
     "status": "Alive",
     "description": "Dwarf from Tontatta Kingdom and member of the Tontatta Pirates",
     "gender": "Female",
-    "affiliation1": "Pirate"
+    "affiliation1": "Civil"
   },
   {
     "name": "Willie Gallon",
@@ -19510,7 +19510,7 @@
     "status": "Alive",
     "description": "Giant kid from Elbaph that attends the Walrus School. Jarul's Great-Great-Granddaughter. One of the 10 kids that were kidnapped by the Knights of God",
     "gender": "Female",
-    "affiliation1": "Pirate"
+    "affiliation1": "Civil"
   },
   {
     "name": "Yokan",
