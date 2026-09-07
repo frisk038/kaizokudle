@@ -345,19 +345,17 @@ body::before {
     overflow: hidden;
 }
 
-/* col widths: Name 16%, Sex 5%, Crew 18%, Side 6%, Fruit 10%, Haki 8%, rest auto */
+/* col widths: Name 18%, Sex 5%, Side 7%, Fruit 12%, Haki 9%, rest auto */
 #guesses-table th:nth-child(1),
-#guesses-table td:nth-child(1) { width: 16%; }
+#guesses-table td:nth-child(1) { width: 18%; }
 #guesses-table th:nth-child(2),
 #guesses-table td:nth-child(2) { width: 5%; }
 #guesses-table th:nth-child(3),
-#guesses-table td:nth-child(3) { width: 18%; }
+#guesses-table td:nth-child(3) { width: 7%; }
 #guesses-table th:nth-child(4),
-#guesses-table td:nth-child(4) { width: 6%; }
+#guesses-table td:nth-child(4) { width: 12%; }
 #guesses-table th:nth-child(5),
-#guesses-table td:nth-child(5) { width: 10%; }
-#guesses-table th:nth-child(6),
-#guesses-table td:nth-child(6) { width: 8%; }
+#guesses-table td:nth-child(5) { width: 9%; }
 
 #guesses-table td {
     padding: 6px 2px;

@@ -173,7 +173,6 @@ function makeGuess(char) {
     const cols = [
         makeCell(char.name,                                char.name === targetCharacter.name),
         makeCell(formatGender(char.gender),                formatGender(char.gender) === formatGender(targetCharacter.gender)),
-        makeCell(char.affiliation || '-',                  (char.affiliation || '') === (targetCharacter.affiliation || '')),
         makeCell(formatAffiliation(char.affiliation1),     (char.affiliation1 || '') === (targetCharacter.affiliation1 || '')),
         makeCell(formatFruit(char.devil_fruit),            (char.devil_fruit || '') === (targetCharacter.devil_fruit || '')),
         makeCell(formatHaki(char.haki),                    formatHaki(char.haki) === formatHaki(targetCharacter.haki)),
