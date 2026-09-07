@@ -97,10 +97,25 @@ function formatGender(g) {
     return g;
 }
 
+function formatAffiliation(a) {
+    if (!a) return '-';
+    const l = a.toLowerCase();
+    if (l.includes('pirate'))       return 'Pir';
+    if (l.includes('gouvernement') || l.includes('government')) return 'Gov';
+    if (l.includes('revolutionary')) return 'Reb';
+    if (l.includes('civil'))        return 'Civ';
+    return a.slice(0, 3);
+}
+
+function formatFruit(f) {
+    if (!f) return '-';
+    return f.split(' ')[0];
+}
+
 function formatHaki(arr) {
     if (!arr || arr.length === 0) return '-';
     const emojis = { Conquerors: '👑', Armament: '⚔️', Observation: '👁️' };
-    return arr.map(h => emojis[h] || h[0]).join(' ');
+    return arr.map(h => emojis[h] || '?').join('');
 }
 
 function formatArc(arc) {
@@ -156,14 +171,15 @@ function makeGuess(char) {
     const arcRes     = compareNumeric(char.first_appearance_arc, targetCharacter.first_appearance_arc, formatArc);
 
     const cols = [
-        makeCell(char.name,                               char.name === targetCharacter.name),
-        makeCell(formatGender(char.gender),               formatGender(char.gender) === formatGender(targetCharacter.gender)),
-        makeCell(char.affiliation1 || '-',                (char.affiliation1 || '') === (targetCharacter.affiliation1 || '')),
-        makeCell(char.devil_fruit  || '-',                (char.devil_fruit  || '') === (targetCharacter.devil_fruit  || '')),
-        makeCell(formatHaki(char.haki),                   formatHaki(char.haki) === formatHaki(targetCharacter.haki)),
-        makeCell(bountyRes.text,                          char.bounty === targetCharacter.bounty, bountyRes.arrow),
-        makeCell(heightRes.text,                          char.height === targetCharacter.height, heightRes.arrow),
-        makeCell(arcRes.text || '?',                      char.first_appearance_arc === targetCharacter.first_appearance_arc, arcRes.arrow),
+        makeCell(char.name,                                char.name === targetCharacter.name),
+        makeCell(formatGender(char.gender),                formatGender(char.gender) === formatGender(targetCharacter.gender)),
+        makeCell(char.affiliation || '-',                  (char.affiliation || '') === (targetCharacter.affiliation || '')),
+        makeCell(formatAffiliation(char.affiliation1),     (char.affiliation1 || '') === (targetCharacter.affiliation1 || '')),
+        makeCell(formatFruit(char.devil_fruit),            (char.devil_fruit || '') === (targetCharacter.devil_fruit || '')),
+        makeCell(formatHaki(char.haki),                    formatHaki(char.haki) === formatHaki(targetCharacter.haki)),
+        makeCell(bountyRes.text,                           char.bounty === targetCharacter.bounty, bountyRes.arrow),
+        makeCell(heightRes.text,                           char.height === targetCharacter.height, heightRes.arrow),
+        makeCell(arcRes.text || '?',                       char.first_appearance_arc === targetCharacter.first_appearance_arc, arcRes.arrow),
     ];
 
     cols.forEach(td => tr.appendChild(td));

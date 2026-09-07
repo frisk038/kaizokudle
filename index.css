@@ -335,30 +335,33 @@ body::before {
 #guesses-table th {
     background: var(--bg-elevated);
     color: var(--text-muted);
-    font-size: 0.6rem;
+    font-size: 0.55rem;
     font-weight: 600;
-    letter-spacing: 0.06em;
+    letter-spacing: 0.04em;
     text-transform: uppercase;
-    padding: 8px 3px;
+    padding: 7px 2px;
     border-bottom: 1px solid var(--border-light);
     text-align: center;
     overflow: hidden;
 }
 
-/* column widths — Name gets more room, others share evenly */
+/* col widths: Name 16%, Sex 5%, Crew 18%, Side 6%, Fruit 10%, Haki 8%, rest auto */
 #guesses-table th:nth-child(1),
-#guesses-table td:nth-child(1) { width: 18%; }
-
+#guesses-table td:nth-child(1) { width: 16%; }
 #guesses-table th:nth-child(2),
-#guesses-table td:nth-child(2),
+#guesses-table td:nth-child(2) { width: 5%; }
+#guesses-table th:nth-child(3),
+#guesses-table td:nth-child(3) { width: 18%; }
+#guesses-table th:nth-child(4),
+#guesses-table td:nth-child(4) { width: 6%; }
+#guesses-table th:nth-child(5),
+#guesses-table td:nth-child(5) { width: 10%; }
 #guesses-table th:nth-child(6),
-#guesses-table td:nth-child(6),
-#guesses-table th:nth-child(7),
-#guesses-table td:nth-child(7) { width: 9%; }
+#guesses-table td:nth-child(6) { width: 8%; }
 
 #guesses-table td {
-    padding: 8px 3px;
-    font-size: 0.68rem;
+    padding: 6px 2px;
+    font-size: 0.6rem;
     font-weight: 500;
     text-align: center;
     border-bottom: 1px solid var(--border);
