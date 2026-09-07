@@ -177,8 +177,8 @@ function makeGuess(char) {
         makeCell(formatFruit(char.devil_fruit),            (char.devil_fruit || '') === (targetCharacter.devil_fruit || '')),
         makeCell(formatHaki(char.haki),                    formatHaki(char.haki) === formatHaki(targetCharacter.haki)),
         makeCell(bountyRes.text,                           char.bounty === targetCharacter.bounty, bountyRes.arrow),
-        makeCell(heightRes.text,                           char.height === targetCharacter.height, heightRes.arrow),
-        makeCell(arcRes.text || '?',                       char.first_appearance_arc === targetCharacter.first_appearance_arc, arcRes.arrow),
+        makeCell(char.height === targetCharacter.height ? '✓' : (heightRes.arrow || '?'), char.height === targetCharacter.height),
+        makeCell(char.first_appearance_arc === targetCharacter.first_appearance_arc ? '✓' : (arcRes.arrow || '?'), char.first_appearance_arc === targetCharacter.first_appearance_arc),
     ];
 
     cols.forEach(td => tr.appendChild(td));
