@@ -69,8 +69,13 @@ document.addEventListener('click', e => {
 });
 
 function formatBounty(b) {
-    if (!b) return 'None';
-    if (typeof b === 'number') return b.toLocaleString();
+    if (!b) return '-';
+    if (typeof b === 'number') {
+        if (b >= 1_000_000_000) return (b / 1_000_000_000).toFixed(1) + 'B';
+        if (b >= 1_000_000)     return (b / 1_000_000).toFixed(0) + 'M';
+        if (b >= 1_000)         return (b / 1_000).toFixed(0) + 'K';
+        return b.toString();
+    }
     return b;
 }
 
@@ -87,15 +92,20 @@ function formatHeight(h) {
 function formatGender(g) {
     if (!g) return '?';
     const l = g.toLowerCase();
-    if (l.startsWith('m')) return 'Male';
-    if (l.startsWith('f')) return 'Female';
+    if (l.startsWith('m')) return 'M';
+    if (l.startsWith('f')) return 'F';
     return g;
 }
 
 function formatHaki(arr) {
-    if (!arr || arr.length === 0) return 'None';
+    if (!arr || arr.length === 0) return '-';
     const emojis = { Conquerors: '👑', Armament: '⚔️', Observation: '👁️' };
-    return arr.map(h => `${emojis[h] || ''}${h}`).join(', ');
+    return arr.map(h => emojis[h] || h[0]).join(' ');
+}
+
+function formatArc(arc) {
+    if (!arc) return '?';
+    return arc.replace('Chapter ', 'Ch.');
 }
 
 function compareNumeric(gVal, tVal, formatFn) {
@@ -143,13 +153,13 @@ function makeGuess(char) {
 
     const bountyRes  = compareNumeric(char.bounty,            targetCharacter.bounty,            formatBounty);
     const heightRes  = compareNumeric(char.height,            targetCharacter.height,             formatHeight);
-    const arcRes     = compareNumeric(char.first_appearance_arc, targetCharacter.first_appearance_arc, x => x);
+    const arcRes     = compareNumeric(char.first_appearance_arc, targetCharacter.first_appearance_arc, formatArc);
 
     const cols = [
         makeCell(char.name,                               char.name === targetCharacter.name),
         makeCell(formatGender(char.gender),               formatGender(char.gender) === formatGender(targetCharacter.gender)),
-        makeCell(char.affiliation1 || 'None',             (char.affiliation1 || 'None') === (targetCharacter.affiliation1 || 'None')),
-        makeCell(char.devil_fruit  || 'None',             (char.devil_fruit  || 'None') === (targetCharacter.devil_fruit  || 'None')),
+        makeCell(char.affiliation1 || '-',                (char.affiliation1 || '') === (targetCharacter.affiliation1 || '')),
+        makeCell(char.devil_fruit  || '-',                (char.devil_fruit  || '') === (targetCharacter.devil_fruit  || '')),
         makeCell(formatHaki(char.haki),                   formatHaki(char.haki) === formatHaki(targetCharacter.haki)),
         makeCell(bountyRes.text,                          char.bounty === targetCharacter.bounty, bountyRes.arrow),
         makeCell(heightRes.text,                          char.height === targetCharacter.height, heightRes.arrow),

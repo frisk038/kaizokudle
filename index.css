@@ -309,15 +309,12 @@ body::before {
     text-align: right;
 }
 
-/* ── Table wrapper: horizontal scroll on mobile ── */
+/* ── Table wrapper: NO horizontal scroll ── */
 .table-wrapper {
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
     border-radius: var(--radius-lg);
     border: 1px solid var(--border);
     box-shadow: var(--shadow-card);
-    scrollbar-width: thin;
-    scrollbar-color: var(--border-light) transparent;
+    overflow: hidden;
 }
 
 .table-wrapper.hidden { display: none; }
@@ -326,7 +323,7 @@ body::before {
 #guesses-table {
     border-collapse: collapse;
     width: 100%;
-    min-width: 560px;
+    table-layout: fixed;
 }
 
 #guesses-table thead {
@@ -338,30 +335,37 @@ body::before {
 #guesses-table th {
     background: var(--bg-elevated);
     color: var(--text-muted);
-    font-size: 0.68rem;
+    font-size: 0.6rem;
     font-weight: 600;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.06em;
     text-transform: uppercase;
-    padding: 10px 8px;
+    padding: 8px 3px;
     border-bottom: 1px solid var(--border-light);
     text-align: center;
-    white-space: nowrap;
+    overflow: hidden;
 }
 
-#guesses-table th.col-name {
-    text-align: left;
-    padding-left: 14px;
-}
+/* column widths — Name gets more room, others share evenly */
+#guesses-table th:nth-child(1),
+#guesses-table td:nth-child(1) { width: 18%; }
+
+#guesses-table th:nth-child(2),
+#guesses-table td:nth-child(2),
+#guesses-table th:nth-child(6),
+#guesses-table td:nth-child(6),
+#guesses-table th:nth-child(7),
+#guesses-table td:nth-child(7) { width: 9%; }
 
 #guesses-table td {
-    padding: 10px 8px;
-    font-size: 0.82rem;
+    padding: 8px 3px;
+    font-size: 0.68rem;
     font-weight: 500;
     text-align: center;
     border-bottom: 1px solid var(--border);
     vertical-align: middle;
-    line-height: 1.35;
-    white-space: nowrap;
+    line-height: 1.3;
+    overflow: hidden;
+    word-break: break-word;
     transition: background var(--transition);
 }
 
@@ -369,12 +373,9 @@ body::before {
 
 #guesses-table td:first-child {
     text-align: left;
-    padding-left: 14px;
+    padding-left: 6px;
     font-weight: 600;
     color: var(--text);
-    max-width: 120px;
-    white-space: normal;
-    word-break: break-word;
 }
 
 /* ── Row entry animation ── */
@@ -398,43 +399,17 @@ td.incorrect {
     color: #f87171;
 }
 
-td.correct::after,
-td.incorrect::after {
-    display: none;
-}
-
-/* cell icon badges */
-td.correct .cell-inner::before  { content: '✓ '; font-weight: 700; }
-td.incorrect .cell-inner::before { display: none; }
-
 .cell-inner {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    gap: 3px;
-    flex-wrap: wrap;
-    max-width: 100px;
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
-/* Arrows */
-.arrow { font-size: 0.7rem; opacity: 0.8; }
+.arrow { font-size: 0.65rem; }
 
 /* ── Utilities ── */
 .hidden { display: none !important; }
-
-/* ── Responsive: keep table readable ── */
-@media (max-width: 400px) {
-    #guesses-table td,
-    #guesses-table th {
-        padding: 8px 5px;
-        font-size: 0.74rem;
-    }
-    #guesses-table td:first-child {
-        padding-left: 10px;
-        max-width: 90px;
-    }
-    .pip { width: 18px; height: 18px; }
-}
 
 /* ── Scrollbar styling (webkit) ── */
 ::-webkit-scrollbar { width: 4px; height: 4px; }
