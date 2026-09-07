@@ -70,13 +70,12 @@ document.addEventListener('click', e => {
 
 function formatBounty(b) {
     if (!b) return '-';
-    if (typeof b === 'number') {
-        if (b >= 1_000_000_000) return (b / 1_000_000_000).toFixed(1) + 'B';
-        if (b >= 1_000_000)     return (b / 1_000_000).toFixed(0) + 'M';
-        if (b >= 1_000)         return (b / 1_000).toFixed(0) + 'K';
-        return b.toString();
-    }
-    return b;
+    const n = typeof b === 'number' ? b : parseInt(String(b).replace(/[^0-9]/g, ''));
+    if (isNaN(n)) return '-';
+    if (n >= 1_000_000_000) return (n / 1_000_000_000).toFixed(1) + 'B';
+    if (n >= 1_000_000)     return (n / 1_000_000).toFixed(0) + 'M';
+    if (n >= 1_000)         return (n / 1_000).toFixed(0) + 'K';
+    return n.toString();
 }
 
 function formatHeight(h) {
