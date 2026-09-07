@@ -2,35 +2,72 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Kaizokudle</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <h1>Kaizokudle</h1>
-    
-    <div style="position: relative; width: 300px; margin-bottom: 20px;">
-        <input type="text" id="character-input" placeholder="Type a character name..." autocomplete="off">
-        <div id="autocomplete-list" class="autocomplete-items"></div>
-    </div>
 
-    <table id="guesses-table">
-        <thead>
-            <tr id="table-header" style="display: none;">
-                <th>Name</th>
-                <th>Gender</th>
-                <th>Affiliation</th>
-                <th>Devil Fruit</th>
-                <th>Haki Type</th>
-                <th>Bounty</th>
-                <th>Height</th>
-                <th>First Appeared Arc</th>
-            </tr>
-        </thead>
-        <tbody id="guesses-body">
-            <!-- Guesses go here -->
-        </tbody>
-    </table>
+    <header class="site-header">
+        <div class="header-skull">☠️</div>
+        <h1 class="site-title">KAIZOKUDLE</h1>
+        <div class="header-skull">☠️</div>
+        <p class="site-subtitle">Guess the One Piece character</p>
+    </header>
+
+    <main class="main-content">
+
+        <div id="notification-area"></div>
+
+        <div class="search-wrapper">
+            <div class="search-box">
+                <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+                </svg>
+                <input type="text" id="character-input" placeholder="Search a character…" autocomplete="off" autocorrect="off" spellcheck="false">
+            </div>
+            <div id="autocomplete-list" class="autocomplete-items"></div>
+        </div>
+
+        <div id="guesses-meta" class="guesses-meta hidden">
+            <span class="guesses-label">Guesses</span>
+            <div class="guesses-pips" id="guesses-pips">
+                <span class="pip" data-index="0"></span>
+                <span class="pip" data-index="1"></span>
+                <span class="pip" data-index="2"></span>
+                <span class="pip" data-index="3"></span>
+                <span class="pip" data-index="4"></span>
+                <span class="pip" data-index="5"></span>
+                <span class="pip" data-index="6"></span>
+                <span class="pip" data-index="7"></span>
+                <span class="pip" data-index="8"></span>
+                <span class="pip" data-index="9"></span>
+            </div>
+            <span class="guesses-count" id="guess-counter">0 / 10</span>
+        </div>
+
+        <div id="table-wrapper" class="table-wrapper hidden">
+            <table id="guesses-table">
+                <thead>
+                    <tr id="table-header">
+                        <th class="col-name">Name</th>
+                        <th>Gender</th>
+                        <th>Affiliation</th>
+                        <th>Devil Fruit</th>
+                        <th>Haki</th>
+                        <th>Bounty</th>
+                        <th>Height</th>
+                        <th>First Arc</th>
+                    </tr>
+                </thead>
+                <tbody id="guesses-body"></tbody>
+            </table>
+        </div>
+
+    </main>
 
     <script src="index.js"></script>
 </body>
