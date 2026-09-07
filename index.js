@@ -1,5 +1,6 @@
 let characters = [];
 let targetCharacter = null;
+let guessCount = 0;
 
 const inputEl = document.getElementById('character-input');
 const autocompleteListEl = document.getElementById('autocomplete-list');
@@ -148,7 +149,25 @@ function makeGuess(char) {
 
     if (char.name === targetCharacter.name) {
         alert("You found the character!");
+    } else {
+        guessCount++;
+        if (guessCount >= 10) {
+            revealAnswer();
+        }
     }
+}
+
+function revealAnswer() {
+    inputEl.disabled = true;
+
+    const revealDiv = document.createElement('div');
+    revealDiv.id = 'reveal-banner';
+    revealDiv.innerHTML = `
+        <p>The character was:</p>
+        <strong>${targetCharacter.name}</strong>
+        ${targetCharacter.epithet ? `<em>("${targetCharacter.epithet}")</em>` : ''}
+    `;
+    document.body.insertBefore(revealDiv, document.getElementById('guesses-table'));
 }
 
 init();

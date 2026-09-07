@@ -54,3 +54,23 @@ th, td {
 .incorrect {
     background-color: #ffb6c1;
 }
+
+#reveal-banner {
+    background-color: #fff3cd;
+    border: 2px solid #ffc107;
+    border-radius: 8px;
+    padding: 16px 24px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 1.1em;
+}
+
+#reveal-banner strong {
+    display: block;
+    font-size: 1.4em;
+    margin: 4px 0;
+}
+
+#reveal-banner em {
+    color: #555;
+}
