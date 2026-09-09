@@ -8,7 +8,6 @@ const autocompleteEl = document.getElementById('autocomplete-list');
 const tableBody      = document.getElementById('guesses-body');
 const tableWrapper   = document.getElementById('table-wrapper');
 const guessesMeta    = document.getElementById('guesses-meta');
-const guessCounter   = document.getElementById('guess-counter');
 const notifArea      = document.getElementById('notification-area');
 const pips           = document.querySelectorAll('.pip');
 
@@ -208,9 +207,7 @@ function markPip(index, win) {
     pip.classList.add(win ? 'win' : 'used');
 }
 
-function updateCounter() {
-    guessCounter.textContent = `${guessCount} / 10`;
-}
+function updateCounter() {}
 
 function showNotification(type, html) {
     const div = document.createElement('div');
