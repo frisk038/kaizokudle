@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Character Editor</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: sans-serif;
+    background: #111;
+    color: #eee;
+    padding: 24px;
+  }
+
+  h1 { margin-bottom: 16px; font-size: 1.4rem; }
+
+  #toolbar {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+  }
+
+  #toolbar input[type="file"] { color: #ccc; }
+
+  button {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.9rem;
+  }
+
+  #save-btn {
+    background: #2a7a2a;
+    color: #fff;
+  }
+
+  #save-btn:hover { background: #338a33; }
+
+  #count { color: #aaa; font-size: 0.9rem; }
+
+  #search {
+    padding: 7px 12px;
+    border-radius: 6px;
+    border: 1px solid #444;
+    background: #222;
+    color: #eee;
+    font-size: 0.9rem;
+    width: 220px;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9rem;
+  }
+
+  thead th {
+    background: #222;
+    padding: 10px 8px;
+    text-align: left;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    border-bottom: 2px solid #333;
+  }
+
+  tbody tr:nth-child(even) { background: #181818; }
+  tbody tr:hover { background: #1e2a1e; }
+
+  td {
+    padding: 6px 8px;
+    border-bottom: 1px solid #2a2a2a;
+    vertical-align: middle;
+  }
+
+  td input, td select {
+    width: 100%;
+    background: transparent;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    color: #eee;
+    padding: 4px 6px;
+    font-size: 0.9rem;
+  }
+
+  td input:focus, td select:focus {
+    outline: none;
+    border-color: #555;
+    background: #222;
+  }
+
+  td select option { background: #222; }
+
+  .del-btn {
+    background: none;
+    color: #c44;
+    font-size: 1.1rem;
+    padding: 2px 8px;
+    border-radius: 4px;
+  }
+
+  .del-btn:hover { background: #3a1a1a; color: #f66; }
+
+  #placeholder {
+    color: #666;
+    margin-top: 40px;
+    text-align: center;
+    font-size: 1rem;
+  }
+</style>
+</head>
+<body>
+
+<h1>Character Editor</h1>
+
+<div id="toolbar">
+  <input type="file" id="file-input" accept=".json">
+  <button id="save-btn" style="display:none" onclick="saveJSON()">Save JSON</button>
+  <input type="text" id="search" placeholder="Filter by name…" style="display:none" oninput="renderTable()">
+  <span id="count"></span>
+</div>
+
+<div id="placeholder">Load a characters.json file to start editing.</div>
+<table id="table" style="display:none">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Gender</th>
+      <th>Affiliation 1</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody id="tbody"></tbody>
+</table>
+
+<script>
+let characters = [];
+
+document.getElementById('file-input').addEventListener('change', function(e) {
+  const file = e.target.files[0];
+  if (!file) return;
+  const reader = new FileReader();
+  reader.onload = function(ev) {
+    try {
+      characters = JSON.parse(ev.target.result);
+      document.getElementById('save-btn').style.display = '';
+      document.getElementById('search').style.display = '';
+      document.getElementById('placeholder').style.display = 'none';
+      document.getElementById('table').style.display = '';
+      renderTable();
+    } catch(err) {
+      alert('Invalid JSON file.');
+    }
+  };
+  reader.readAsText(file);
+});
+
+function renderTable() {
+  const q = document.getElementById('search').value.toLowerCase();
+  const tbody = document.getElementById('tbody');
+  tbody.innerHTML = '';
+
+  const visible = characters
+    .map((c, i) => ({ c, i }))
+    .filter(({ c }) => !q || c.name.toLowerCase().includes(q));
+
+  document.getElementById('count').textContent = `${visible.length} / ${characters.length} characters`;
+
+  visible.forEach(({ c, i }) => {
+    const tr = document.createElement('tr');
+    tr.innerHTML = `
+      <td><input type="text" value="${esc(c.name)}" data-idx="${i}" data-field="name"></td>
+      <td>
+        <select data-idx="${i}" data-field="gender">
+          <option value="Male"${c.gender === 'Male' ? ' selected' : ''}>Male</option>
+          <option value="Female"${c.gender === 'Female' ? ' selected' : ''}>Female</option>
+          <option value="Unknown"${c.gender !== 'Male' && c.gender !== 'Female' ? ' selected' : ''}>Unknown</option>
+        </select>
+      </td>
+      <td><input type="text" value="${esc(c.affiliation1 ?? '')}" data-idx="${i}" data-field="affiliation1"></td>
+      <td><button class="del-btn" onclick="deleteChar(${i})" title="Delete">✕</button></td>
+    `;
+    tbody.appendChild(tr);
+  });
+
+  tbody.querySelectorAll('input, select').forEach(el => {
+    el.addEventListener('change', function() {
+      const idx = +this.dataset.idx;
+      const field = this.dataset.field;
+      characters[idx][field] = this.value;
+    });
+  });
+}
+
+function deleteChar(idx) {
+  characters.splice(idx, 1);
+  renderTable();
+}
+
+function saveJSON() {
+  const blob = new Blob([JSON.stringify(characters, null, 2)], { type: 'application/json' });
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(blob);
+  a.download = 'characters.json';
+  a.click();
+}
+
+function esc(str) {
+  return String(str).replace(/"/g, '&quot;').replace(/</g, '&lt;');
+}
+</script>
+</body>
+</html>
