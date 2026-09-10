@@ -215,6 +215,7 @@ function showNotification(type, html) {
     div.innerHTML = html;
     notifArea.innerHTML = '';
     notifArea.appendChild(div);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
 init();

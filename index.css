@@ -277,6 +277,7 @@ body::before {
     gap: 5px;
     flex: 1;
     justify-content: center;
+    align-items: center;
 }
 
 .pip {
