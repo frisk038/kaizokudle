@@ -13,7 +13,7 @@ const pips           = document.querySelectorAll('.pip');
 
 async function init() {
     try {
-        const response = await fetch('./assets/characters.json');
+        const response = await fetch('./assets/characters.filtered.json');
         characters = await response.json();
         targetCharacter = characters[Math.floor(Math.random() * characters.length)];
         console.log("Target:", targetCharacter.name);
