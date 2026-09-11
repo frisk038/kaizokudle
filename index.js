@@ -1,4 +1,5 @@
 let characters = [];
+let allCharacters = [];
 let targetCharacter = null;
 let guessCount = 0;
 let gameOver = false;
@@ -13,8 +14,12 @@ const pips           = document.querySelectorAll('.pip');
 
 async function init() {
     try {
-        const response = await fetch('./assets/characters.filtered.json');
-        characters = await response.json();
+        const [filteredRes, allRes] = await Promise.all([
+            fetch('./assets/characters.filtered.json'),
+            fetch('./assets/characters.json'),
+        ]);
+        characters    = await filteredRes.json();
+        allCharacters = await allRes.json();
         targetCharacter = characters[Math.floor(Math.random() * characters.length)];
         console.log("Target:", targetCharacter.name);
     } catch (err) {
@@ -27,7 +32,7 @@ inputEl.addEventListener('input', function () {
     closeAllLists();
     if (!val) return;
 
-    const filtered = characters.filter(char => {
+    const filtered = allCharacters.filter(char => {
         const nameMatch    = char.name    && char.name.toLowerCase().includes(val.toLowerCase());
         const epithetMatch = char.epithet && char.epithet.toLowerCase().includes(val.toLowerCase());
         return nameMatch || epithetMatch;
