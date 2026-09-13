@@ -231,7 +231,7 @@ function makeGuess(char) {
         makeCell(formatHaki(char.haki),                    formatHaki(char.haki) === formatHaki(targetCharacter.haki)),
         makeCell(bountyRes.text,                           char.bounty === targetCharacter.bounty, bountyRes.arrow),
         makeCell(char.height === targetCharacter.height ? '✓' : (heightRes.arrow || '?'), char.height === targetCharacter.height),
-        makeCell(arcMatch ? '✓' : arcText, arcMatch, arcArrow),
+        makeCell(arcMatch ? '✓' : (arcArrow || '?'), arcMatch),
     ];
 
     cols.forEach(td => tr.appendChild(td));
