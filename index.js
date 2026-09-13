@@ -4,6 +4,50 @@ let targetCharacter = null;
 let guessCount = 0;
 let gameOver = false;
 
+const ARCS = [
+    { name: 'Romance Dawn',        start: 1,    end: 7    },
+    { name: 'Orange Town',         start: 8,    end: 21   },
+    { name: 'Syrup Village',       start: 22,   end: 41   },
+    { name: 'Baratie',             start: 42,   end: 68   },
+    { name: 'Arlong Park',         start: 69,   end: 95   },
+    { name: 'Loguetown',           start: 96,   end: 100  },
+    { name: 'Reverse Mountain',    start: 101,  end: 105  },
+    { name: 'Whisky Peak',         start: 106,  end: 114  },
+    { name: 'Little Garden',       start: 115,  end: 129  },
+    { name: 'Drum Island',         start: 130,  end: 154  },
+    { name: 'Arabasta',            start: 155,  end: 217  },
+    { name: 'Jaya',                start: 218,  end: 236  },
+    { name: 'Skypiea',             start: 237,  end: 302  },
+    { name: 'Long Ring L. Land',   start: 303,  end: 321  },
+    { name: 'Water 7',             start: 322,  end: 374  },
+    { name: 'Enies Lobby',         start: 375,  end: 430  },
+    { name: 'Post-Enies Lobby',    start: 431,  end: 441  },
+    { name: 'Thriller Bark',       start: 442,  end: 489  },
+    { name: 'Sabaody',             start: 490,  end: 513  },
+    { name: 'Amazon Lily',         start: 514,  end: 524  },
+    { name: 'Impel Down',          start: 525,  end: 549  },
+    { name: 'Marineford',          start: 550,  end: 580  },
+    { name: 'Post-War',            start: 581,  end: 597  },
+    { name: 'Return to Sabaody',   start: 598,  end: 602  },
+    { name: 'Fish-Man Island',     start: 603,  end: 653  },
+    { name: 'Punk Hazard',         start: 654,  end: 699  },
+    { name: 'Dressrosa',           start: 700,  end: 801  },
+    { name: 'Zou',                 start: 802,  end: 824  },
+    { name: 'Whole Cake Island',   start: 825,  end: 902  },
+    { name: 'Levely',              start: 903,  end: 908  },
+    { name: 'Wano Country',        start: 909,  end: 1057 },
+    { name: 'Egghead',             start: 1058, end: 1125 },
+    { name: 'Elbaph',              start: 1126, end: 9999 },
+];
+
+function getArcInfo(chapterStr) {
+    if (!chapterStr) return null;
+    const num = parseInt(String(chapterStr).replace(/\D/g, ''));
+    if (isNaN(num)) return null;
+    const idx = ARCS.findIndex(a => num >= a.start && num <= a.end);
+    return idx === -1 ? null : { name: ARCS[idx].name, index: idx };
+}
+
 const inputEl        = document.getElementById('character-input');
 const autocompleteEl = document.getElementById('autocomplete-list');
 const tableBody      = document.getElementById('guesses-body');
@@ -121,9 +165,10 @@ function formatHaki(arr) {
     return arr.map(h => emojis[h] || '?').join('');
 }
 
-function formatArc(arc) {
-    if (!arc) return '?';
-    return arc.replace('Chapter ', 'Ch.');
+function formatArc(chapterStr) {
+    if (!chapterStr) return '?';
+    const info = getArcInfo(chapterStr);
+    return info ? info.name : chapterStr.replace('Chapter ', 'Ch.');
 }
 
 function compareNumeric(gVal, tVal, formatFn) {
@@ -169,9 +214,14 @@ function makeGuess(char) {
 
     const tr = document.createElement('tr');
 
-    const bountyRes  = compareNumeric(char.bounty,            targetCharacter.bounty,            formatBounty);
-    const heightRes  = compareNumeric(char.height,            targetCharacter.height,             formatHeight);
-    const arcRes     = compareNumeric(char.first_appearance_arc, targetCharacter.first_appearance_arc, formatArc);
+    const bountyRes  = compareNumeric(char.bounty, targetCharacter.bounty, formatBounty);
+    const heightRes  = compareNumeric(char.height, targetCharacter.height, formatHeight);
+
+    const gArc = getArcInfo(char.first_appearance_arc);
+    const tArc = getArcInfo(targetCharacter.first_appearance_arc);
+    const arcMatch = gArc && tArc && gArc.index === tArc.index;
+    const arcArrow = (!arcMatch && gArc && tArc) ? (gArc.index > tArc.index ? '↓' : '↑') : '';
+    const arcText  = gArc ? gArc.name : formatArc(char.first_appearance_arc);
 
     const cols = [
         makeCell(char.name,                                char.name === targetCharacter.name),
@@ -181,7 +231,7 @@ function makeGuess(char) {
         makeCell(formatHaki(char.haki),                    formatHaki(char.haki) === formatHaki(targetCharacter.haki)),
         makeCell(bountyRes.text,                           char.bounty === targetCharacter.bounty, bountyRes.arrow),
         makeCell(char.height === targetCharacter.height ? '✓' : (heightRes.arrow || '?'), char.height === targetCharacter.height),
-        makeCell(char.first_appearance_arc === targetCharacter.first_appearance_arc ? '✓' : (arcRes.arrow || '?'), char.first_appearance_arc === targetCharacter.first_appearance_arc),
+        makeCell(arcMatch ? '✓' : arcText, arcMatch, arcArrow),
     ];
 
     cols.forEach(td => tr.appendChild(td));
