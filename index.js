@@ -62,8 +62,9 @@ async function init() {
             fetch('./assets/characters_targets.json'),
             fetch('./assets/characters_autocomplete.json'),
         ]);
-        characters    = await filteredRes.json();
+        const allTargets = await filteredRes.json();
         allCharacters = await allRes.json();
+        characters = allTargets.filter(c => (c.celebrity_score ?? 0) >= 6);
         targetCharacter = characters[Math.floor(Math.random() * characters.length)];
         console.log("Target:", targetCharacter.name);
     } catch (err) {
