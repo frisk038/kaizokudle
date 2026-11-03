@@ -59,8 +59,8 @@ const pips           = document.querySelectorAll('.pip');
 async function init() {
     try {
         const [filteredRes, allRes] = await Promise.all([
-            fetch('./assets/characters.filtered.json'),
-            fetch('./assets/characters.json'),
+            fetch('./assets/characters_targets.json'),
+            fetch('./assets/characters_autocomplete.json'),
         ]);
         characters    = await filteredRes.json();
         allCharacters = await allRes.json();

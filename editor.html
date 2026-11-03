@@ -148,11 +148,11 @@
 
 <div id="toolbar">
   <label class="file-label">
-    characters.json
+    characters_autocomplete.json
     <input type="file" id="file-input" accept=".json">
   </label>
   <label class="file-label">
-    enriched.json <span style="color:#555">(optional)</span>
+    characters_wiki_index.json <span style="color:#555">(optional)</span>
     <input type="file" id="enriched-input" accept=".json">
   </label>
   <button id="save-btn" style="display:none" onclick="saveJSON()">Save JSON</button>
@@ -160,7 +160,7 @@
   <span id="count"></span>
 </div>
 
-<div id="placeholder">Load a characters.json file to start editing.</div>
+<div id="placeholder">Load a characters_autocomplete.json file to start editing.</div>
 <table id="table" style="display:none">
   <thead>
     <tr id="thead-row">
@@ -319,7 +319,7 @@ function saveJSON() {
   const blob = new Blob([JSON.stringify(characters, null, 2)], { type: 'application/json' });
   const a = document.createElement('a');
   a.href = URL.createObjectURL(blob);
-  a.download = 'characters.json';
+  a.download = 'characters_autocomplete.json';
   a.click();
 }
 

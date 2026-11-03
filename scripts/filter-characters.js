@@ -1,7 +1,7 @@
 #!/usr/bin/env node
-// Reads assets/characters.enriched.json and assets/characters.json,
+// Reads assets/characters_wiki_index.json and assets/characters_autocomplete.json,
 // scores each character, prints a distribution, and writes a filtered
-// assets/characters.filtered.json.
+// assets/characters_targets.json.
 //
 // Usage:
 //   node scripts/filter-characters.js             (uses default threshold 300)
@@ -14,9 +14,9 @@ import { dirname, join } from 'path';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(__dirname, '..');
-const INPUT = join(ROOT, 'assets', 'characters.json');
-const ENRICHED = join(ROOT, 'assets', 'characters.enriched.json');
-const OUTPUT = join(ROOT, 'assets', 'characters.filtered.json');
+const INPUT = join(ROOT, 'assets', 'characters_autocomplete.json');
+const ENRICHED = join(ROOT, 'assets', 'characters_wiki_index.json');
+const OUTPUT = join(ROOT, 'assets', 'characters_targets.json');
 
 const args = process.argv.slice(2);
 const thresholdArg = args.find((_, i) => args[i - 1] === '--threshold');
@@ -24,7 +24,7 @@ const THRESHOLD = thresholdArg ? parseInt(thresholdArg, 10) : 300;
 const DRY_RUN = args.includes('--dry-run');
 
 if (!existsSync(ENRICHED)) {
-  console.error('Missing assets/characters.enriched.json — run enrich-wiki.js first.');
+  console.error('Missing assets/characters_wiki_index.json — run enrich-wiki.js first.');
   process.exit(1);
 }
 
@@ -91,7 +91,7 @@ if (borderline.length) {
 if (!DRY_RUN) {
   writeFileSync(OUTPUT, JSON.stringify(kept, null, 2));
   console.log(`\nSaved to ${OUTPUT}`);
-  console.log('When happy with the results, replace assets/characters.json with assets/characters.filtered.json.');
+  console.log('When happy with the results, update assets/characters_targets.json.');
 } else {
   console.log('\n(dry-run: no file written)');
 }

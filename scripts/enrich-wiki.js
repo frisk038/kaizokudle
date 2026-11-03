@@ -4,7 +4,7 @@
 // interrupted and resumed.
 //
 // Usage: node scripts/enrich-wiki.js
-// Output: assets/characters.enriched.json
+// Output: assets/characters_wiki_index.json
 
 import { readFileSync, writeFileSync, existsSync } from 'fs';
 import { fileURLToPath } from 'url';
@@ -12,8 +12,8 @@ import { dirname, join } from 'path';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(__dirname, '..');
-const INPUT = join(ROOT, 'assets', 'characters.json');
-const OUTPUT = join(ROOT, 'assets', 'characters.enriched.json');
+const INPUT = join(ROOT, 'assets', 'characters_autocomplete.json');
+const OUTPUT = join(ROOT, 'assets', 'characters_wiki_index.json');
 
 const DELAY_MS = 400;
 const API_BASE = 'https://onepiece.fandom.com/fr/api.php';
