@@ -155,7 +155,7 @@
     "name": "An Zengaiina",
     "image": "/images/characters/An_Zengaiina.webp",
     "image_pre": "/images/characters/An_Zengaiina_Pre.webp",
-    "bounty": "Over 15,000,000",
+    "bounty": 15000000,
     "origin": "Grand Line",
     "first_appearance_arc": "Chapter 528",
     "race": "Human",
@@ -226,7 +226,7 @@
     "race": "Human",
     "status": "Alive",
     "description": "Former policeman from Taya Kingdom that was part of the World Military Draft that filled the 2 Admiral vacancies",
-    "gender": "Unknown",
+    "gender": "Male",
     "affiliation1": "Gouvernement",
     "celebrity_score": 6
   },
@@ -324,7 +324,7 @@
     "status": "Deceased",
     "description": "Former bandit, a samurai from Wano serving as one of the Nine Red Scabbards",
     "gender": "Male",
-    "affiliation1": "Pirate",
+    "affiliation1": "Civil",
     "celebrity_score": 5
   },
   {
@@ -349,7 +349,7 @@
     "race": "Robot",
     "status": "Alive",
     "description": "Punk-05 - Violence",
-    "gender": "Unknown",
+    "gender": "Female",
     "affiliation1": "Gouvernement",
     "celebrity_score": 3
   },
@@ -412,7 +412,7 @@
     "race": "Human",
     "status": "Alive",
     "description": "Former officer agent of Baroque Works and partner of Miss Merry Christmas. Now working as a pizza delivery boy at New Spiders Cafe. Miss Thursday's older brother",
-    "gender": "Unknown",
+    "gender": "Male",
     "affiliation1": "Pirate",
     "celebrity_score": 7
   },
@@ -714,7 +714,7 @@
     "race": "Human",
     "status": "Alive",
     "description": "Okama and former officer agent on Baroque Works. He is now the new queen of Newkama Land (Impel Down Lvl 5.5)",
-    "gender": "Unknown",
+    "gender": "Male",
     "affiliation1": "Gouvernement",
     "celebrity_score": 8
   },
@@ -1076,7 +1076,7 @@
     "race": "Human",
     "status": "Alive",
     "description": "Marine Admiral and the only one remaining from the previous trio",
-    "gender": "Unknown",
+    "gender": "Male",
     "affiliation1": "Gouvernement",
     "celebrity_score": 7
   },
@@ -1311,7 +1311,7 @@
     "status": "Alive",
     "description": "Scientist and one of the co-founders of NEO MADS. Former member of MADS and creator of the chemical SAD",
     "gender": "Male",
-    "affiliation1": "Civil",
+    "affiliation1": "Pirate",
     "celebrity_score": 6
   },
   {
@@ -1356,7 +1356,7 @@
     "status": "Unknown",
     "description": "Captain of the Candy Pirates. He and his crew were defeated by CP9 after Enies Lobby",
     "gender": "Male",
-    "affiliation1": "Gouvernement",
+    "affiliation1": "Pirate",
     "celebrity_score": 3
   },
   {
@@ -1459,7 +1459,7 @@
     "status": "Alive",
     "description": "Most dangerous female pirate ever to be imprisoned in Impel Down. Currently working for Teach as captain of the 6th ship",
     "gender": "Female",
-    "affiliation1": "Gouvernement",
+    "affiliation1": "Pirate",
     "celebrity_score": 7
   },
   {
@@ -1502,7 +1502,7 @@
     "image": "/images/characters/Chadros_Higelyges.webp",
     "epithet": "Boss",
     "affiliation": "Caesar Clown (Defected)",
-    "bounty": "80,060,000 (former)",
+    "bounty": 80060000,
     "origin": "Grand Line",
     "height": 691,
     "age": 45,
@@ -1661,7 +1661,7 @@
     "race": "Human",
     "status": "Unknown",
     "description": "Former Emperor of the Sea and captain of the Big Mom Pirates. She is the matriarch of Charlotte Family, whose many children make up the infraestructure of her crew",
-    "gender": "Unknown",
+    "gender": "Female",
     "affiliation1": "Pirate",
     "celebrity_score": 7
   },
@@ -2160,7 +2160,7 @@
     "status": "Alive",
     "description": "Former Roger Pirates member (doctor) and now working as the caretaker of Laboon and the overseer of Twin Cape Lighthouse",
     "gender": "Male",
-    "affiliation1": "Pirate",
+    "affiliation1": "Civil",
     "celebrity_score": 6
   },
   {
@@ -2189,7 +2189,7 @@
     "status": "Alive",
     "description": "Friend of Garp and foster mother of Ace, Luffy and Sabo. Mountain bandit boss of the Dadan Family and wanted criminal",
     "gender": "Female",
-    "affiliation1": "Pirate",
+    "affiliation1": "Civil",
     "celebrity_score": 4
   },
   {
@@ -2343,7 +2343,7 @@
     "race": "Human",
     "status": "Alive",
     "description": "Former bounty hunter who joined Baroque Works as the highest ranked Officer Agent. Currently working for Cross Guild",
-    "gender": "Unknown",
+    "gender": "Male",
     "affiliation1": "Pirate",
     "celebrity_score": 8
   },
@@ -2486,7 +2486,7 @@
     "epithet": "Death God",
     "affiliation": "Blackbeard Pirates",
     "devil_fruit": "Shiku Shiku no Mi",
-    "bounty": "At least 72,000,000",
+    "bounty": 72000000,
     "origin": "North Blue",
     "height": 342,
     "age": 28,
@@ -2574,7 +2574,7 @@
     "status": "Alive",
     "description": "World Noble, former Warlord, and captain of the Donquixote Pirates. Son of Homing and older brother of Rosinante",
     "gender": "Male",
-    "affiliation1": "Gouvernement",
+    "affiliation1": "Pirate",
     "celebrity_score": 9
   },
   {
@@ -2690,7 +2690,7 @@
     "race": "Human",
     "status": "Alive",
     "description": "Former officer agent of Baroque Works and partner of Mr.4. Now working as a princess at the New Spiders Cafe",
-    "gender": "Unknown",
+    "gender": "Female",
     "affiliation1": "Pirate",
     "celebrity_score": 8
   },
@@ -2734,7 +2734,7 @@
     "race": "Robot",
     "status": "Alive",
     "description": "Punk-03 - Thinking",
-    "gender": "Unknown",
+    "gender": "Male",
     "affiliation1": "Gouvernement",
     "celebrity_score": 3
   },
@@ -2803,7 +2803,7 @@
     "epithet": "Miracle Person",
     "affiliation": "Revolutionary Army",
     "devil_fruit": "Horu Horu no Mi",
-    "bounty": "At least 100,000,000",
+    "bounty": 100000000,
     "origin": "Grand Line (Kamabakka Kingdom)",
     "height": 449,
     "age": 53,
@@ -2940,7 +2940,7 @@
     "race": "Mink",
     "status": "Alive",
     "description": "Member of the Hawkins Pirates serving as the crew's magician",
-    "gender": "Unknown",
+    "gender": "Male",
     "affiliation1": "Pirate",
     "celebrity_score": 3
   },
@@ -2958,7 +2958,7 @@
     "status": "Deceased",
     "description": "Founder and original captain of the Sun Pirates. He was a slave and died from blood loss after being ambushed and shot by Marines",
     "gender": "Male",
-    "affiliation1": "Gouvernement",
+    "affiliation1": "Pirate",
     "celebrity_score": 6
   },
   {
@@ -3007,7 +3007,7 @@
     "race": "Human",
     "status": "Alive",
     "description": "Shipwright of the Straw Hat Pirates. Builder of the Thousand Sunny. Son of Scien (Queen)",
-    "gender": "Unknown",
+    "gender": "Male",
     "affiliation1": "Pirate",
     "celebrity_score": 7
   },
@@ -3308,7 +3308,7 @@
     "name": "George Black",
     "image": "/images/characters/George_Black.webp",
     "first_appearance_arc": "Chapter 536 (listed)",
-    "bounty": "At least 100,000,000",
+    "bounty": 100000000,
     "race": "Human",
     "status": "Unknown",
     "description": "Level 5 Impel Down prisoner. He was never shown or mentioned, only seen on a list",
@@ -3405,7 +3405,7 @@
     "race": "Human",
     "status": "Alive",
     "description": "Marine Vice Admiral and one of the candidates for Admiral during the timeskip, alongside Tokikake",
-    "gender": "Unknown",
+    "gender": "Female",
     "affiliation1": "Gouvernement",
     "celebrity_score": 3
   },
@@ -3882,7 +3882,7 @@
     "haki": [
       "Armament"
     ],
-    "bounty": "100,000,000 [Cross Guild]",
+    "bounty": 100000000,
     "height": 179,
     "age": 22,
     "first_appearance_arc": "Chapter 3",
@@ -3969,7 +3969,7 @@
       "Observation",
       "Armament"
     ],
-    "bounty": "200,000,000 [Cross Guild]",
+    "bounty": 200000000,
     "origin": "North Blue",
     "height": 165,
     "age": 17,
@@ -4319,7 +4319,7 @@
     "status": "Alive",
     "description": "Captain of the Arabasta royal guard. He aided Vivi in infiltrating Baroque Works as a Frontier Agent and took on the codename Mr.8",
     "gender": "Male",
-    "affiliation1": "Pirate",
+    "affiliation1": "Civil",
     "celebrity_score": 5
   },
   {
@@ -4342,7 +4342,7 @@
     "image": "/images/characters/Inazuma.webp",
     "affiliation": "Revolutionary Army",
     "devil_fruit": "Choki Choki no Mi",
-    "bounty": "At least 100,000,000",
+    "bounty": 100000000,
     "origin": "South Blue",
     "height": 228,
     "age": 29,
@@ -4350,7 +4350,7 @@
     "race": "Human",
     "status": "Alive",
     "description": "Deputy commander of the G Army under Ivankov",
-    "gender": "Unknown",
+    "gender": "Male",
     "affiliation1": "Revolutionary Army",
     "celebrity_score": 6
   },
@@ -4495,7 +4495,7 @@
     "status": "Deceased",
     "description": "Former 16th division commander of the Whitebeard Pirates and prior to this, a retainer of Oden. Elder brother of Kikunojo. He died fighting Maha from CP0 in Wano",
     "gender": "Male",
-    "affiliation1": "Gouvernement",
+    "affiliation1": "Pirate",
     "celebrity_score": 7
   },
   {
@@ -4627,7 +4627,7 @@
     "name": "Jean Goen",
     "image": "/images/characters/Jean_Goen.webp",
     "origin": "Grand Line",
-    "bounty": "Less than 15,000,000",
+    "bounty": 15000000,
     "first_appearance_arc": "Chapter 526",
     "race": "Human",
     "status": "Alive",
@@ -4662,7 +4662,7 @@
       "Observation",
       "Armament"
     ],
-    "bounty": "At least 20,000,000",
+    "bounty": 20000000,
     "origin": "Grand Line",
     "height": 355,
     "age": 29,
@@ -4922,7 +4922,7 @@
   {
     "name": "Kairo Kureyo",
     "image": "/images/characters/Kairo_Kureyo.webp",
-    "bounty": "At least 100,000,000",
+    "bounty": 100000000,
     "first_appearance_arc": "Chapter 535",
     "race": "Human",
     "status": "Unknown",
@@ -5106,7 +5106,7 @@
     "status": "Alive",
     "description": "One of the two giants who guarded the front gate of Enies Lobby alongside Oimo. Now member of the Giant Warrior Pirates",
     "gender": "Male",
-    "affiliation1": "Gouvernement",
+    "affiliation1": "Pirate",
     "celebrity_score": 4
   },
   {
@@ -5349,7 +5349,7 @@
     "race": "Human",
     "status": "Alive",
     "description": "Samurai and leader of the Nine Red Scabbards. Husband of Tsurujo and former thug. Currently serving as the senior elder in the Flower Capital, assisting Momonosuke",
-    "gender": "Unknown",
+    "gender": "Male",
     "affiliation1": "Civil",
     "celebrity_score": 6
   },
@@ -5370,13 +5370,13 @@
     "name": "Kinoko",
     "image": "/images/characters/Kinoko.webp",
     "affiliation": "Buggy Pirates",
-    "bounty": "At least 100,000,000",
+    "bounty": 100000000,
     "first_appearance_arc": "Chapter 536",
     "race": "Human",
     "status": "Alive",
     "description": "Former Impel Down Level 5 prisoner and member of the Buggy Pirates",
     "gender": "Male",
-    "affiliation1": "Gouvernement",
+    "affiliation1": "Pirate",
     "celebrity_score": 3
   },
   {
@@ -5417,7 +5417,7 @@
       "Observation",
       "Armament"
     ],
-    "bounty": "500,000,000 [Cross Guild]",
+    "bounty": 500000000,
     "origin": "East Blue (Satsuruzo Kingdom)",
     "height": 167,
     "age": 18,
@@ -5633,7 +5633,7 @@
       "Observation",
       "Armament"
     ],
-    "bounty": "500,000,000 [Cross Guild]",
+    "bounty": 500000000,
     "origin": "North Blue",
     "height": 180,
     "age": 26,
@@ -5843,7 +5843,7 @@
     "status": "Alive",
     "description": "Captain of the Tenth Ship of the Blackbeard Pirates and former Marine Admiral",
     "gender": "Male",
-    "affiliation1": "Gouvernement",
+    "affiliation1": "Pirate",
     "celebrity_score": 7
   },
   {
@@ -5911,7 +5911,7 @@
     "epithet": "Demon Sheriff",
     "affiliation": "Blackbeard Pirates",
     "devil_fruit": "Unnamed Wings Devil Fruit",
-    "bounty": "At least 42,200,000",
+    "bounty": 42200000,
     "origin": "West Blue",
     "height": 340,
     "age": 41,
@@ -5966,7 +5966,7 @@
     "status": "Alive",
     "description": "Dwarf from Tontatta Kingdom and the leader of the Tontatta Pirates. Captain of the 5th ship of the Straw Hat Grand Fleet",
     "gender": "Male",
-    "affiliation1": "Pirate",
+    "affiliation1": "Civil",
     "celebrity_score": 5
   },
   {
@@ -5980,7 +5980,7 @@
     "race": "Robot",
     "status": "Alive",
     "description": "Punk-02 - Evil",
-    "gender": "Unknown",
+    "gender": "Female",
     "affiliation1": "Gouvernement",
     "celebrity_score": 3
   },
@@ -6469,7 +6469,7 @@
     "race": "Animal",
     "status": "Unknown",
     "description": "Giant octopus that appeared in Hatchan's cover story",
-    "gender": "Unknown",
+    "gender": "Male",
     "affiliation1": "Civil",
     "celebrity_score": 3
   },
@@ -7542,7 +7542,7 @@
     "status": "Alive",
     "description": "Princess of Arabasta Kingdom. Daughter of Cobra and Titi. She previously worked undercover on Baroque Works as Miss Wednesday alongside Igaram in order to save her kingdom",
     "gender": "Female",
-    "affiliation1": "Pirate",
+    "affiliation1": "Civil",
     "celebrity_score": 6
   },
   {
@@ -7739,7 +7739,7 @@
     "race": "Animal",
     "status": "Alive",
     "description": "Giant snake who lives in Upper Yard in Skypiea. Having lived for over four centuries, the snake was once the companion of Kalgara and Mont Blanc Noland back when Upper Yard was still part of Jaya",
-    "gender": "Unknown",
+    "gender": "Female",
     "affiliation1": "Civil",
     "celebrity_score": 5
   },
@@ -7768,7 +7768,7 @@
     "status": "Deceased",
     "description": "Was the shipwright of the Black Cat Pirates and the crew member who got hypnotized by Jango to pretend he was Kuro and was killed by the Marines 3 years prior to Kuro enacting his plan",
     "gender": "Male",
-    "affiliation1": "Gouvernement",
+    "affiliation1": "Pirate",
     "celebrity_score": 5
   },
   {
@@ -7830,7 +7830,7 @@
     "status": "Alive",
     "description": "One of the two giants who guarded the front gate of Enies Lobby alongside Kashii. Now member of the Giant Warrior Pirates",
     "gender": "Male",
-    "affiliation1": "Gouvernement",
+    "affiliation1": "Pirate",
     "celebrity_score": 4
   },
   {
@@ -8457,7 +8457,7 @@
     "status": "Alive",
     "description": "Big Mom's 25th ex-Husband, father of Chiffon and Lola. Grandfather of Pez",
     "gender": "Male",
-    "affiliation1": "Pirate",
+    "affiliation1": "Civil",
     "celebrity_score": 3
   },
   {
@@ -8469,7 +8469,7 @@
       "Observation",
       "Armament"
     ],
-    "bounty": "500,000,000 [Cross Guild]",
+    "bounty": 500000000,
     "origin": "West Blue",
     "height": 205,
     "age": 29,
@@ -8532,7 +8532,7 @@
     "race": "Robot",
     "status": "Alive",
     "description": "Punk-04 - Wisdom",
-    "gender": "Unknown",
+    "gender": "Male",
     "affiliation1": "Gouvernement",
     "celebrity_score": 3
   },
@@ -8828,7 +8828,7 @@
     "name": "Roche Tomson",
     "image": "/images/characters/Roche_Tomson.webp",
     "first_appearance_arc": "Chapter 536 (listed)",
-    "bounty": "At least 100,000,000",
+    "bounty": 100000000,
     "race": "Human",
     "status": "Unknown",
     "description": "Level 5 Impel Down prisoner. He was never shown or mentioned, only seen on a list",
@@ -9401,7 +9401,7 @@
       "Observation",
       "Armament"
     ],
-    "bounty": "500,000,000 [Cross Guild]",
+    "bounty": 500000000,
     "origin": "Grand Line (Mt. Kintoki)",
     "height": 279,
     "age": 34,
@@ -9450,7 +9450,7 @@
     "race": "Robot",
     "status": "Alive",
     "description": "Punk-01 - Good",
-    "gender": "Unknown",
+    "gender": "Male",
     "affiliation1": "Gouvernement",
     "celebrity_score": 3
   },
@@ -9467,7 +9467,7 @@
     "race": "Human",
     "status": "Alive",
     "description": "Bartender of Shakky's Rip-off Bar on Sabaody, where he lives with her husband Silvers Rayleigh. Formerly served in the Kuja Pirates as the first mate of Gloriosa, her captain and Amazon Lily's empress. She later succeeded her as both the Kuja Pirates' captain as well as the empress of Amazon Lily. She was also one of the main prizes of God Valley",
-    "gender": "Unknown",
+    "gender": "Female",
     "affiliation1": "Pirate",
     "celebrity_score": 4
   },
@@ -9582,7 +9582,7 @@
     "status": "Alive",
     "description": "Captain and helmsman of the Golden Lion Pirates. Former member of the Rocks Pirates and the first known prisoner to have ever escaped from Impel Down",
     "gender": "Male",
-    "affiliation1": "Gouvernement",
+    "affiliation1": "Pirate",
     "celebrity_score": 3
   },
   {
@@ -9777,7 +9777,7 @@
     "status": "Alive",
     "description": "Captain of the 2nd ship of Blackbeard Pirates and former Head Jailer of Impel Down who had himself been imprisoned on Level 6 death row for his excessive, murderous violence against prisoners",
     "gender": "Male",
-    "affiliation1": "Gouvernement",
+    "affiliation1": "Pirate",
     "celebrity_score": 7
   },
   {
@@ -9862,7 +9862,7 @@
     "race": "Human",
     "status": "Alive",
     "description": "Member of the Knights of God and World Noble. Former princess of Esperia kingdom where she acquainted with Brook and killed her own father while under the effects of Domi Reversi, although her memories of the past are repressed by Imu. Daughter of Manmayer Gurou and Candelle",
-    "gender": "Unknown",
+    "gender": "Female",
     "affiliation1": "Gouvernement",
     "celebrity_score": 5
   },
@@ -10491,7 +10491,7 @@
     "race": "Human",
     "status": "Alive",
     "description": "Marine Vice Admiral and one of the candidates for Admiral during the timeskip, alongside Gion",
-    "gender": "Unknown",
+    "gender": "Male",
     "affiliation1": "Gouvernement",
     "celebrity_score": 3
   },
@@ -10702,7 +10702,7 @@
     "race": "Animal",
     "status": "Alive",
     "description": "Small mouse that Iceburg found and takes care of",
-    "gender": "Unknown",
+    "gender": "Male",
     "affiliation1": "Civil",
     "celebrity_score": 3
   },
@@ -10855,7 +10855,7 @@
     "epithet": "the Supersonic",
     "affiliation": "Blackbeard Pirates",
     "devil_fruit": "Wapu Wapu no Mi",
-    "bounty": "At least 64,000,000",
+    "bounty": 64000000,
     "origin": "East Blue",
     "height": 340,
     "age": 27,
@@ -10935,7 +10935,7 @@
     "status": "Deceased",
     "description": "Was one of the four elite officers and the first to occupy the Heart seat of the Donquixote Pirates. He was a Marine Vice Admiral and the head of G-5 who was working undercover for Doflamingo",
     "gender": "Male",
-    "affiliation1": "Gouvernement",
+    "affiliation1": "Pirate",
     "celebrity_score": 5
   },
   {
@@ -10980,7 +10980,7 @@
     "status": "Alive",
     "description": "Eldest son and second child of the Vinsmoke Family. Prince of the Germa Kingdom and a commander in its military arm, Germa 66",
     "gender": "Male",
-    "affiliation1": "Civil",
+    "affiliation1": "Pirate",
     "celebrity_score": 4
   },
   {
@@ -10996,7 +10996,7 @@
     "status": "Alive",
     "description": "King of the Germa Kingdom, the supreme commander of the Germa 66, and the patriarch of the Vinsmoke Family, being Sanji's biological father",
     "gender": "Male",
-    "affiliation1": "Civil",
+    "affiliation1": "Pirate",
     "celebrity_score": 4
   },
   {
@@ -11012,7 +11012,7 @@
     "status": "Alive",
     "description": "Second son and third child of the Vinsmoke Family. Prince of the Germa Kingdom and a commander in its military arm, Germa 66",
     "gender": "Male",
-    "affiliation1": "Civil",
+    "affiliation1": "Pirate",
     "celebrity_score": 4
   },
   {
@@ -11028,7 +11028,7 @@
     "status": "Alive",
     "description": "Eldest child and only daughter of the Vinsmoke Family. Princess of the Germa Kingdom and a commander in its military arm, Germa 66",
     "gender": "Female",
-    "affiliation1": "Civil",
+    "affiliation1": "Pirate",
     "celebrity_score": 4
   },
   {
@@ -11044,7 +11044,7 @@
     "status": "Alive",
     "description": "Fourth son and youngest child of the Vinsmoke Family. Prince of the Germa Kingdom and a commander in its military arm, Germa 66",
     "gender": "Male",
-    "affiliation1": "Civil",
+    "affiliation1": "Pirate",
     "celebrity_score": 4
   },
   {
@@ -11208,7 +11208,7 @@
     "status": "Alive",
     "description": "One of the Tobiroppo. Over a decade ago, he served as an agent of CP9 before his failure to guard the Gomu Gomu no Mi led to his dismissal from service and imprisonment. Former Captain of the Who's-Who Pirates",
     "gender": "Male",
-    "affiliation1": "Gouvernement",
+    "affiliation1": "Pirate",
     "celebrity_score": 7
   },
   {
@@ -11218,7 +11218,7 @@
     "race": "Human",
     "status": "Unknown",
     "description": "Physicist that was mentioned by the narrator only in the manga when the Straw Hats encountered a huge ship falling from the sky after Arabasta",
-    "gender": "Unknown",
+    "gender": "Male",
     "affiliation1": "Civil",
     "celebrity_score": 3
   },
