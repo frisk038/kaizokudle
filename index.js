@@ -249,7 +249,7 @@ function makeGuess(char) {
         markPip(guessCount, false);
         guessCount++;
         updateCounter();
-        if (guessCount >= 10) {
+        if (guessCount >= 6) {
             gameOver = true;
             inputEl.disabled = true;
             showNotification('lose', `The character was <span class="notif-char">${targetCharacter.name}</span>${targetCharacter.epithet ? ` — "${targetCharacter.epithet}"` : ''}`);
